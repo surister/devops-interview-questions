@@ -2342,16 +2342,16 @@ def get_food(brothers_menu) -> set:
 set([food for bro in x for food in bro['food']])
 ```
 
-</b></details>
+</b></details><hr>
 
 <details>
 <summary>What is List Comprehension? Is it better than a typical loop? Why? Can you demonstrate how to use it?</summary><br><b>
 </b>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi risus lacus, efficitur at tortor 
+<p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi risus lacus, efficitur at tortor 
 vel, sodales scelerisque odio. Morbi volutpat arcu sed sem laoreet malesuada. Nam vitae neque nulla.
  Sed interdum mauris a ipsum pellentesque, sed facilisis nisi sodales. Nulla vel faucibus quam, ac gravida 
 libero. Vestibulum quis massa lectus. Duis at diam eu tortor iaculis ultricies ac eget ipsum. In vitae mauris 
-eget lectus rutrum blandit. </p>
+eget lectus rutrum blandit. </b></p>
 </details>
 
 <hr>
