@@ -2348,6 +2348,7 @@ set([food for bro in x for food in bro['food']])
 <summary>What is List Comprehension? Is it better than a typical loop? Why? Can you demonstrate how to use it?</summary><br><b>
 </b></details>
 
+<hr>
 <details>
 <summary>How to reverse a string?</summary><br><b>
 
@@ -2360,7 +2361,7 @@ def reverse_string(string):
         temp =  char + temp
     return temp
 ```
-</b></details>
+</b></details><hr>
 
 <details>
 <summary>How to sort a dictionary by values?</summary><br><b>
