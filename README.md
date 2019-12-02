@@ -2709,7 +2709,7 @@ a = f()
    ************
 ```
 
-</details>
+</b></details>
 
 <details>
 <summary>Write a script which will determine if a given host is accessible on a given port</summary><br><b>
