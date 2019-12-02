@@ -2611,11 +2611,13 @@ every time, that's what decorators do, they introduce syntax to write all of thi
 <details>
 <summary>Can you show how to write and use decorators?</summary><br><b>
 
-<code>#These two decorators (ntimes and timer) are usually used to display decorators functionalities, you can find them in lots of
+<code>
+These two decorators (ntimes and timer) are usually used to display decorators functionalities, you can find them in lots of
 tutorials/reviews. I first saw these examples two years ago in pyData 2017. https://www.youtube.com/watch?v=7lmCu8wz8ro&t=3731s/code>
 
+
 ```
-#  Simple decorator:
+Simple decorator:
 
 def deco(f):
     print(f"Hi I am the {f.__name__}() function!")
@@ -2631,6 +2633,7 @@ print(a)
 >>> Hi I am the hello_world() function!
     Hi, I'm in!
 ```
+
 
 This is the simplest decorator version, it basically saves us from writting <code>a = deco(hello_world())</code>.
 But at this point we can only control the before execution, let's take on the after:
@@ -2654,6 +2657,8 @@ a = f("************")
     ************
     I'm in!
 ```
+
+
 deco receives a function -> f
 wrapper receives the arguments -> *args, **kwargs
 
@@ -2663,6 +2668,7 @@ deco returns wrapper.
 As you can see we conveniently do things before and after the execution of a given function.
 
 For example, we could write a decorator that calculates the execution time of a function.
+
 
 ```
 import time
@@ -2684,7 +2690,10 @@ a = f()
 >>> 2.0008859634399414
 
 ```
+
+
 Or create a decorator that executes a function n times.
+
 
 ```
 def n_times(n):
@@ -2707,6 +2716,7 @@ a = f()
    ************
    ************
 ```
+
 
 </b></details>
 
