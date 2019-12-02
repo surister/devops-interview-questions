@@ -2610,7 +2610,6 @@ every time, that's what decorators do, they introduce syntax to write all of thi
 
 <details>
 <summary>Can you show how to write and use decorators?</summary><br><b>
-</b>
 
 <code>#These two decorators (ntimes and timer) are usually used to display decorators functionalities, you can find them in lots of
 tutorials/reviews. I first saw these examples two years ago in pyData 2017. https://www.youtube.com/watch?v=7lmCu8wz8ro&t=3731s/code>
