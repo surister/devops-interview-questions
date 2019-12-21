@@ -2,7 +2,7 @@
 
 :information_source: &nbsp;This repository contains questions on various DevOps and SRE related topics
 
-:bar_chart: &nbsp;There are currently **635** questions
+:bar_chart: &nbsp;There are currently **679** questions
 
 :books: &nbsp;To learn more about DevOps check the resources in [DevOpsBit.com](https://devopsbit.com)
 
@@ -58,8 +58,11 @@
     <td align="center"><a href="#virtualization"><b>Virtualization</b></a><br /><sub><a href="#virtualization-beginner">Beginner :baby:</a></sub><br><sub></td>
     <td align="center"><a href="#operating-system"><b>Operating System</b></a><br /><sub><a href="#operating-system-beginner">Beginner :baby:</a></sub><br><sub></td>
     <td align="center"><a href="#distributed"><img src="images/distributed.png" width="110px;" height="75px;" alt="Distributed"/><br /><b>Distributed</b></a></td>
-    <td align="center"><a href="#general"><img src="images/general.png" width="110px;" height="75px;" alt="General"/><br /><b>General</b></a></td>
-    <td align="center"><a href="#scenarios"><img src="images/scenarios.png" width="110px;" height="75px;" alt="Scenarios"/><br /><b>Scenarios</b></a></td>
+    <td align="center"><a href="#general"><b>General</b></a><br /><sub><a href="#general-beginner">Beginner :baby:</a></sub><br><sub></td>
+    <td align="center"><a href="#HR"><img src="images/HR.png" width="110px;" height="75px;" alt="HR"/><br /><b>HR</b></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="#challenges"><img src="images/challenges.png" width="110px;" height="75px;" alt="Challenges"/><br /><b>Challenges</b></a></td>
   </tr>
 </table>
 </center>
@@ -108,6 +111,10 @@ Make sure to elaborate :)
 
 <details>
 <summary>What are the anti-patterns of DevOps?</summary><br><b>
+</b></details>
+
+<details>
+<summary>What is Reliability? How does it DevOps?</summary><br><b>
 </b></details>
 
 <details>
@@ -192,10 +199,6 @@ Stateful applications depend on the storage to save state and data, typically da
 </b></details>
 
 <details>
-<summary>What is HTTP and how it works?</summary><br><b>
-</b></details>
-
-<details>
 <summary>Describe the workflow of setting up some type of web server (Apache, IIS, Tomact, ...)</summary><br><b>
 </b></details>
 
@@ -205,6 +208,20 @@ Stateful applications depend on the storage to save state and data, typically da
 
 <details>
 <summary>Describe me the architecture of service/app/project/... you designed and/or implemented</summary><br><b>
+</b></details>
+
+<details>
+<summary>What types of tests are you familiar with?</summary><br><b>
+
+Styling, unit, functional, API, integration, smoke, scenario, ...
+
+You should be able to explain those that you mention.
+</b></details>
+
+<details>
+<summary>You need to install periodically the same package on different operating systems (Ubuntu, RHEL, ...). How would you do it?</summary><br><b>
+
+It can be as simple as one Ansible (or other CM tool) task that runs periodically with Cron. In more advanced cases, perhaps a CI system.
 </b></details>
 
 ##### SRE
@@ -255,7 +272,7 @@ One can argue whether it's per company definition or a global one but at least a
 </b></details>
 
 <details>
-<summary>How do you measure your CI/CD quality? Are there any metrics you are using for measuring the quality?</summary><br><b>
+<summary>How do you measure your CI/CD quality? Are there any metrics or KPIs you are using for measuring the quality?</summary><br><b>
 </b></details>
 
 <details>
@@ -280,10 +297,6 @@ Note: cross-dependency is when you have two or more changes to separate projects
 
 <details>
 <summary>Have you contributed to an open source project? Tell me about this experience</summary><br><b>
-</b></details>
-
-<details>
-<summary>When you publish a project, you usually publish it with a license. What types of licenses are you familiar with and which one do you prefer to use?</summary><br><b>
 </b></details>
 
 ## Jenkins
@@ -418,7 +431,7 @@ SAAS
 </b></details>
 
 <details>
-<summary>What are the differences between Cloud Provides and On-Premise solution?</summary><br><b>
+<summary>What are the differences between Cloud Providers and On-Premise solution?</summary><br><b>
 
 In cloud providers, someone else owns and manages the hardware, hire the relevant infrastructure teams and pays for real-estate (for both hardware and people). You can focus on your business.
 
@@ -590,13 +603,13 @@ Stop the instance, the type of the instance to match the desired RAM and start t
 </b></details>
 
 <details>
-<summary>What AWS VPN is usef for?</summary><br><b>
+<summary>What AWS VPN is used for?</summary><br><b>
 </b></details>
 
 <details>
 <summary>What is the difference between Site-to-Site VPN and Client VPN?</summary><br><b>
 </b></details>
-
+<details>
 <summary>True or False? AWS Inspector can perform both network and host assessments</summary><br><b>
 
 True
@@ -985,6 +998,10 @@ Using the `chmod` command.
 
 <details>
 <summary>You try to delete a file but it fails. Name at least three different reason as to why it could happen</summary><br><b>
+
+* No more disk space
+* No more indoes
+* No permissions
 </b></details>
 
 <details>
@@ -1014,6 +1031,10 @@ Hardware -> Kernel -> <u>Daemons</u>, System Libraries, Server Display.
 
 <details>
 <summary>Describe how to make a certain process/app a service</summary><br><b>
+</b></details>
+
+<details>
+<summary>How do you kill a process in D state?</summary><br><b>
 </b></details>
 
 ##### Debugging
@@ -1072,6 +1093,14 @@ Hardware -> Kernel -> <u>Daemons</u>, System Libraries, Server Display.
 
 <details>
 <summary>What is a Linux kernel module and how do you load a new module?</summary><br><b>
+</b></details>
+
+<details>
+<summary>Explain user space and kernel space</summary><br><b>
+</b></details>
+
+<details>
+<summary>Wildcards are implemented on user or kernel space?</summary><br><b>
 </b></details>
 
 <details>
@@ -1136,6 +1165,15 @@ I consider this as a good blog post to read more about it: https://shapeshed.com
 
 For each file (and directory) in Linux there is an inode, a data structure which stores meta data
 related to the file like its size, owner, permissions, etc.
+</b></details> 
+
+<details>
+<summary>Which of the following is not included in inode:
+
+  * Link count
+  * File size
+  * File name
+  * File timestamp</summary><br><b>
 </b></details>
 
 <details>
@@ -1143,12 +1181,26 @@ related to the file like its size, owner, permissions, etc.
 </b></details>
 
 <details>
+<summary>You run mount command but you get no output. How would you check what mounts you have on your system?</summary><br><b>
+</b></details>
+
+<details>
 <summary>What is the difference between a soft link and hard link?</summary><br><b>
 
 Hard link is the same file, using the same inode.
 Soft link is a shortcut to another file, using a different inode.
+</b></details>
 
-Soft links can be created between different file systems while hard link can be created only within the same file system.
+<details>
+<summary>True or False? You can create an hard link for a directory</summary><br><b>
+
+False
+</b></details>
+
+<details>
+<summary>True or False? You can create a soft link between different filesystems</summary><br><b>
+
+True
 </b></details>
 
 <details>
@@ -1263,6 +1315,14 @@ To view all available signals run `kill -l`
 </b></details>
 
 <details>
+<summary>What <code>kill 0</code> does?</summary><br><b>
+</b></details>
+
+<details>
+<summary>What <code>kill -0 <PID></code> does?</summary><br><b>
+</b></details>
+
+<details>
 <summary>What is a trap?</summary><br><b>
 </b></details>
 
@@ -1337,6 +1397,12 @@ You can use the commands <code>top</code> and <code>free</code>
 </b></details>
 
 <details>
+<summary>You run ls and you get "/lib/ld-linux-armhf.so.3 no such file or directory". What is the problem?</summary><br><b>
+
+The ls executable is built for an incompatible architecture.
+</b></details>
+
+<details>
 <summary>How would you split a 50 lines file into 2 files of 25 lines each?</summary><br><b>
 
 You can use the <code>split</code> command this way: <code>split -l 25 some_file</code>
@@ -1363,7 +1429,7 @@ This is a great article on the topic: https://www.computerhope.com/jargon/f/file
 <summary>Explain Kernel OOM</summary><br><b>
 </b></details>
 
-##### Security
+##### Linux Security
 
 <details>
 <summary>What is chroot? In what scenarios would you consider using it?</summary><br><b>
@@ -1422,11 +1488,23 @@ This is a great article on the topic: https://www.computerhope.com/jargon/f/file
 </b></details>
 
 <details>
+<summary>How can you send an HTTP request from your shell?</summary><br><b>
+
+Using nc is one way
+</b></details>
+
+<details>
 <summary>What are packet sniffers? Have you used one in the past? If yes, which packet sniffers have you used and for what purpose?</summary><br><b>
 </b></details>
 
 <details>
 <summary>How to list active connections?</summary><br><b>
+</b></details>
+
+<details>
+<summary>How to trigger neighbor discovery in IPv6?</summary><br><b>
+
+One way would be `ping6 ff02::1`
 </b></details>
 
 ##### Linux DNS
@@ -1459,7 +1537,7 @@ You can specify one or more of the following:
 </b></details>
 
 <details>
-<summary>How to know to which package a file on the system belongs to?</summary><br><b>
+<summary>How to know to which package a file on the system belongs to? Is it a problem if it doesn't belongs to a package?</summary><br><b>
 </b></details>
 
 ##### Applications and Services
@@ -1480,14 +1558,6 @@ Upstart: add Upstart init script at /etc/init/service.conf
 
 <details>
 <summary>What load balancer algorithms are you familiar with?</summary><br><b>
-</b></details>
-
-<details>
-<summary>What is a proxy?</summary><br><b> 
-</b></details>
-
-<details>
-<summary>What is a reverse proxy?</summary><br><b> 
 </b></details>
 
 <details>
@@ -1535,6 +1605,14 @@ Re-install the OS IS NOT the right answer :)
 <summary>What is sudo? How do you set it up?</summary><br><b>
 </b></details>
 
+##### Random and Strange :)
+
+<details>
+<summary>Give 5 commands which are two letters long</summary><br><b>
+
+ls, wc, dd, df, du, ps, ip, ...
+</b></details>
+
 <a name="linux-advanced"></a>
 #### :star: Advanced
 
@@ -1559,6 +1637,14 @@ These system calls are reading the file <code>/my/file</code> and 5 is the file 
 </b></details>
 
 <details>
+<summary>What system call is used for listing files?</summary><br><b>
+</b></details>
+
+<details>
+<summary>What system call is used for creating a new process?</summary><br><b>
+</b></details>
+
+<details>
 <summary>What is the difference between a process and a thread?</summary><br><b>
 </b></details>
 
@@ -1566,7 +1652,7 @@ These system calls are reading the file <code>/my/file</code> and 5 is the file 
 <summary>You found there is a server with high CPU load but you didn't find a process with high CPU. How is that possible?</summary><br><b>
 </b></details>
 
-##### Network
+##### Linux Networking
 
 <details>
 <summary>When you run <code>ip a</code> you see there is a device called 'lo'. What is it and why do we need it?</summary><br><b>
@@ -2432,7 +2518,7 @@ There are many other characteristics but these are the main ones that every pyth
 </b></details>
 
 <details>
-<summary>What data types supported in Python and which of them are mutable? How can you show that a certain data type is mutable?</summary><br><b>
+<summary>What build-in types Python has? Which of them are mutable? How can you show that a certain data type is mutable?</summary><br><b>
 
 The mutable data types are:
 
@@ -2449,6 +2535,20 @@ The immutable data types are:
     Frozenset
 
 You can usually use the function hash() to check an object mutability, if it is hashable it is immutable, although this does not always work as intended as user defined objects might be mutable and hashable
+</b></details>
+
+<details>
+<summary>In Python, functions are first-class objects. What does it mean?</summary><br><b>
+
+In general, first class objects in programming languages are objects which can assigned to variable, used as a return value and can be used as arguments or parameters.<br>
+In python you can treat functions this way. Let's say we have the following function
+
+```
+def my_function():
+    return 5
+```
+
+You can then assign a function to a variables like this `x = my_function` or you can return functions as return values like this `return my_function`
 </b></details>
 
 <details>
@@ -2947,8 +3047,45 @@ def sum(a, b):
     
 >>> None
 ```
+</b></details>
 
-</details>
+<details>
+<summary>How to improve the following block of code?
+
+```
+li = []
+for i in range(1,10):
+    li.append(i)
+```
+</summary><br><b>
+</b></details>
+
+<details>
+<summary>You have the following function
+
+```
+def my_func(li = []):
+    li.append("hmm")  
+    print(li)
+```
+
+If we call it 3 times, what would be the result each call?
+</summary><br><b>
+</b></details>
+
+<details>
+<summary>Given the following function
+
+```
+def is_int(num):
+    if isinstance(num, int):
+        print('Yes')
+    else:
+        print('No')
+```
+What would be the result of is_int(2) and is_int(False)?
+</summary><br><b>
+</b></details>
 
 ##### Data Structures & Types
 
@@ -2967,11 +3104,43 @@ def sum(a, b):
 </b></details>
 
 <details>
+<summary>What <code>assert</code> does in Python?</summary><br><b>
+</b></details>
+
+<details>
 <summary>Explain mocks</summary><br><b>
+</b></details>
+
+<details>
+<summary>How do you measure execution time of small code snippets?</summary><br><b>
+</b></details>
+
+<details>
+<summary>Why one shouldn't use <code>assert</code> in non-test/production code?</summary><br><b>
+</b></details>
+
+##### Flask
+
+<details>
+<summary>You wrote you have experience with Django/Flask. Can you describe what is Django/Flask and how you used it? Why Flask and not Djano? (or vice versa)</summary><br><b>
+</b></details>
+
+<details>
+<summary>What is a route?</summary><br><b>
+</b></details>
+
+<details>
+<summary>How do you manage DB integration?</summary><br><b>
 </b></details>
 
 <a name="python-advanced"></a>
 #### :star: Advanced
+
+<details>
+<summary>What data types are you familiar with that are not Python built-in types but still provided by modules which are part of the standard library?</summary><br><b>
+
+This is a good reference https://docs.python.org/3/library/datatypes.html
+</b></details>
 
 <details>
 <summary>Explain what is a decorator</summary><br><b>
@@ -3121,6 +3290,10 @@ a = f()
 </b></details>
 
 <details>
+<summary>Tell me everything you know about concurrency in Python</summary><br><b>
+</b></details>
+
+<details>
 <summary>Explain the Buffer Protocol</summary><br><b>
 </b></details>
 
@@ -3170,6 +3343,12 @@ Logging
 
 <details>
 <summary>What is the different between infrastructure monitoring and application monitoring? (methods, tools, ...)</summary><br><b>
+</b></details>
+
+##### Python Geeks :)
+
+<details>
+<summary>Tell me something about Python that you think most people don't know</summary><br><b>
 </b></details>
 
 ## Prometheus
@@ -3684,6 +3863,12 @@ Using the keyword <code>read</code> so for example <code>read x</code> will wait
 <summary>Write a script which will list the differences between two directories</summary><br><b>
 </b></details>
 
+##### Practical
+
+<details>
+<summary>Write a script to determine whether a host is up or down</summary><br><b>
+</b></details>
+
 <a name="shell-scripting-advanced"></a>
 #### Advanced
 
@@ -4127,8 +4312,15 @@ the pseudo table to retrieve the sum of the prices spent by each customer, then 
 </b></details>
 
 <details>
+<summary>What can you tell me about Stuxnet?</summary><br><b>
+</b></details>
+
+<details>
+<summary>What can you tell me about Spectre?</summary><br><b>
+</b></details>
+
+<details>
 <summary>Explain OAuth</summary><br><b>
-<a name="puppet-advanced"></a>
 </b></details>
 
 <details>
@@ -4194,6 +4386,10 @@ the pseudo table to retrieve the sum of the prices spent by each customer, then 
 
 <details>
 <summary>Explain "Forward Secrecy"</summary><br><b>
+</b></details>
+
+<details>
+<summary>What is Cache Poisoned Denial of Service?</summary><br><b>
 </b></details>
 
 ## Puppet
@@ -4507,7 +4703,95 @@ According to the CAP theorem, it's not possible for a distributed data store to 
 
 ## General
 
-Although the following questions are not DevOps related, they are still quite common so it's better to prepare for them as well.
+<details>
+<summary>What is HTTP?</summary><br><b>
+</b></details>
+
+<details>
+<summary>Describe HTTP request lifecycle</summary><br><b>
+
+* Resolve host by request to DNS resolver
+* Client SYN
+* Server SYN+ACK
+* Client SYN
+* HTTP request
+* HTTP response
+</b></details>
+
+<details>
+<summary>True or False? HTTP is stateful</summary><br><b>
+
+False. Server doesn't maintain state for incoming request.
+</b></details>
+
+<details>
+<summary>How HTTP request looks like?</summary><br><b>
+
+It consits of:
+
+ * Request line - request type
+ * Headers - content info like length, enconding, etc.
+ * Body (not always included)
+</b></details>
+
+<details>
+<summary>What HTTP method types are there?</summary><br><b>
+
+* GET
+* POST
+* HEAD
+* PUT
+* DELETE
+* CONNECT
+* OPTIONS
+* TRACE
+</b></details>
+
+<details>
+<summary>What HTTP response codes are there?</summary><br><b>
+
+* 1xx - informational
+* 2xx - Success
+* 3xx - Redirect
+* 4xx - Error, client fault
+* 5xx - Error, server fault
+</b></details>
+
+<details>
+<summary>What is HTTPS?</summary><br><b>
+</b></details>
+
+<details>
+<summary>Explain HTTP Cookies</summary><br><b>
+
+HTTP is stateless. To share state, we can use Cookies.
+
+TODO: explain what is actually a Cookie
+</b></details>
+
+<details>
+<summary>What is HTTP Pipelining?</summary><br><b> 
+</b></details>
+
+<details>
+<summary>What is a proxy?</summary><br><b> 
+</b></details>
+
+<details>
+<summary>What is a reverse proxy?</summary><br><b> 
+</b></details>
+
+<details>
+<summary>What is CDN?</summary><br><b> 
+</b></details>
+
+<details>
+<summary>When you publish a project, you usually publish it with a license. What types of licenses are you familiar with and which one do you prefer to use?</summary><br><b>
+</b></details>
+
+## HR
+
+Although the following questions are not DevOps related, they are still quite common and part of the DevOps interview process so it's better to prepare for them as well.
 
 <details>
 <summary>Tell us little bit about yourself</summary><br><b>
@@ -4648,24 +4932,26 @@ you can show how you'd be able to mitigate that problem.
 Not only this will tell you what is expected from you, it will also provide big hint on the type of work you are going to do in the first months of your job.
 </b></details>
 
-## Scenarios
+## Challenges
 
-Scenarios are questions which don't have verbal answer and require you one of the following:
+Challenges require you one of the following:
 
   * Set up environments
   * Write scripts
   * Design and/or develop infrastructure projects
+  * Fix existing applications
 
-These questions usually given as an home task to the candidate and they can combine several topics together.
-Below you can find several scenario questions:
+These type of questions usually given as an home task to the candidate and they can combine several topics together.
+Below you can find several challenges:
 
-* [Writing a Dockerfile and running a container](scenarios/write_dockerfile_run_container.md)
-* [Elasticsearch & Kibana on AWS](scenarios/elk_kibana_aws.md)
-* [Ansible, Minikube and Docker](scenarios/ansible_minikube_docker.md)
-* [Cloud Slack bot](scenarios/cloud_slack_bot.md)
-* [Jenkins: writing scripts](scenarios/jenkins_scripts.md)
-* [Jenkins: writing pipelines](scenarios/jenkins_pipelines.md)
-* [CI for open source project](scenarios/ci_for_open_source_project.md)
+* [Writing a Dockerfile and running a container](challenges/write_dockerfile_run_container.md)
+* [Elasticsearch & Kibana on AWS](challenges/elk_kibana_aws.md)
+* [Ansible, Minikube and Docker](challenges/ansible_minikube_docker.md)
+* [Cloud Slack bot](challenges/cloud_slack_bot.md)
+* [Jenkins: writing scripts](challenges/jenkins_scripts.md)
+* [Jenkins: writing pipelines](challenges/jenkins_pipelines.md)
+* [CI for open source project](challenges/ci_for_open_source_project.md)
+* [Flask, Containers and CI](challenges/flask_container_ci/README.md)
 
 
 ## Credits
